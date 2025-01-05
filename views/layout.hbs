@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<nav class="navbar navbar-expand-lg bg-dark-subtle border border-dark-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <h1 alt="Logo" class="d-inline-block align-text-top mb-0" style="font-size: 1.5rem;">🗂️</h1>
+      <span class="ms-2">GitArchiver</span>
+    </a>
+    <button class="btn btn-outline-primary ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop">
+      Ajuda
+    </button>
+  </div>
+</nav>
+
+{{!-- Offcanvas --}}
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+  aria-labelledby="staticBackdropLabel" style="background-color: rgb(168, 168, 168);">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title ms-3" id="staticBackdropLabel">
+      Ajuda?
+    </h2>
+    <hr>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body text-dark p-5">
+    <div>
+      Para utilizar, além de preencher seu nome de usuário, é preciso gerar uma chave de segurança para utiizar a API do Github.
+      <br>
+      <br>
+      <hr>
+      <ol class="lh-sm">
+        <li>Acesse sua conta no Github</li>
+        <li>Vá até "Profile", e depois "Settings"</li>
+        <li>No final da sua lista lateral, procure por "Dev. Settings"</li>
+        <li>Depois vá em "Personal Access Tokens", e use o "Classic"</li>
+        <li>"Generate new Tokens", e marque a sessão "Repo"</li>
+        <li>Pronto. Copie e cole seu Token recém criado aqui, e confirme.</li>
+        <li>Lembrando que: <b>não deletamos</b>, apenas arquivamos, e você pode desfazer isso através de sua própria dashboard no github facilmente - um por vez.</li>
+        <li>Pra facilitar a depuração, <b>você pode consultar o console do navegador</b>, OK?</li>
+      </ol>
+      <br>
+      <br>
+      <hr>
+      <p>Qualquer coisa, só chamar aqui: <a href="https://github.com/Kazbonfim">Github</a></p>
+    </div>
+  </div>
+</div>
+
+
+{{{body}}}
+
+</body>
+
+</html>
